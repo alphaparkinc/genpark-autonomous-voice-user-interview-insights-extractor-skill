@@ -1,0 +1,38 @@
+{
+  "name": "genpark-autonomous-voice-user-interview-insights-extractor-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Autonomous voice AI user researcher conducting live customer discovery interviews, thematic clustering, and product insight extraction.",
+  "author": "genpark",
+  "category": "product-research",
+  "tags": [
+    "user-interviews",
+    "voice-ai",
+    "qualitative-research",
+    "customer-insights",
+    "listen-labs"
+  ],
+  "inputs": {
+    "study_cohort_id": {
+      "type": "string"
+    },
+    "completed_interviews_count": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "study_id": {
+      "type": "string"
+    },
+    "interviews_conducted_by_voice_agent": {
+      "type": "integer"
+    },
+    "top_unmet_user_needs": {
+      "type": "array"
+    },
+    "executive_video_clip_reel_compiled": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
